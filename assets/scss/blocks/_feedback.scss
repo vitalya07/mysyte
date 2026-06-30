@@ -1,0 +1,60 @@
+.feedback {
+    padding: 120px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        border: 1px solid $bg-secondary;
+        height: 160px;
+        padding: 15px 30px;
+        box-shadow: 0 0 15px $accent;
+    }
+    &__title {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        color: $text-main;
+        margin-bottom: 15px;
+    }
+    &__subtitle {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: $text-main;
+    }
+    &__info {
+        width: 40%;
+    }
+    &__btn {
+        &-text {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 120%;
+            color: $text-main;
+        }
+        &-img {
+            width: 30px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            & > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__img {
+        height: 160px;
+        width: 300px;
+        transform: scaleX(-1);
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

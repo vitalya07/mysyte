@@ -1,0 +1,151 @@
+.reviews {
+    padding: 120px 0;
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 40%;
+    }
+    &__subtitle {
+        max-width: 150px;
+    }
+    &__descr {
+        margin-bottom: 30px;
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    &__item {
+        &-img {
+            width: 30px;
+            height: 30px;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-title {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            color: $text-main;
+        }
+        &-descr {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: $text-main;
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    &__slider {
+        width: 50%;
+    }
+    &__arrows {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        &-btn {
+            width: 60px;
+            height: 60px;
+            border: 1px solid $accent;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #00000000;
+            cursor: pointer;
+            transition: all .3s ease;
+            & > img {
+                width: 30px;
+                height: 30px;
+            }
+            &:hover {
+                box-shadow: 0 0 10px $accent-hover;
+            }
+        }
+    }
+    &__slide {
+        padding: 30px;
+        border: 2px solid $bg-secondary;
+        border-radius: 15px;
+        &-head {
+            border: 1px solid $bg-secondary;
+        }
+        &-img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-avatar {
+            width: 60px;
+            height: 60px;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-text {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 120%;
+            color: $text-main;
+            margin-bottom: 30px;
+        }
+        &-name {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 120%;
+            color: $text-main;
+        }
+        &-footer {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 15px;
+        }
+        &-stars {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 15px;
+        }
+    }
+    &__kwork {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        color: $accent;
+        transition: all .3s ease;
+        &:hover {
+            color: $accent-hover;
+        }
+    }
+}
+.btn {
+    &-prev {
+        transform: rotate(180deg);
+    }
+}

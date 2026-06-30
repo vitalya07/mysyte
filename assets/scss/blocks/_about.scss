@@ -1,0 +1,210 @@
+.about {
+    padding: 120px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__information {
+        width: 40%;
+    }
+    &__box {
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        max-width: 150px;
+    }
+    &__title {
+        max-width: 800px;
+    }
+    &__descr {
+        max-width: 800px;
+    }
+    &__advantages {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 15px;
+        margin-bottom: 30px;
+        position: relative;
+        &-item {
+            border: 5px solid $bg-secondary;
+            border-radius: 15px;
+            padding: 8px;
+            width: 33%;
+            min-height: 240px;
+            // &:first-child {
+            //     border: 5px solid $accent-hover;
+            // }
+        }
+        &-img {
+            width: 40px;
+            height: auto;
+            margin-bottom: 15px;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-title {
+            font-family: "Inter", sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 120%;
+            color: $text-main;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        &-subtitle {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 120%;
+            color: $text-main;
+            margin-bottom: 15px;
+        }
+        &-descr {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: $text-main;
+        }
+    }
+    &__technologies {
+        &-title {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 120%;
+            color: $accent;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        &-wrapper {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 15px;
+        }
+        &-item {
+            width: 30%;
+            border: 3px solid $bg-secondary;
+            border-radius: 15px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        &-img {
+            width: 40px;
+            height: auto;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-text {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            color: $text-main;
+        }
+    }
+    &__img {
+        width: 50%;
+        height: auto;
+        position: relative;
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        &-advantages {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 190px;
+            min-height: 180px;
+            border-radius: 15px;
+            padding: 10px;
+            background-color: $bg-secondary;
+            box-shadow: 0 0 10px $accent;
+        }
+        &-two {
+            position: absolute;
+            top: 15%;
+            left: 70%;
+        }
+        &-icon {
+            width: 40px;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-title {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 120%;
+            color: $text-main;
+            text-align: center;
+            margin-bottom: 15px;
+            & > span {
+                font-family: "Inter", sans-serif;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 120%;
+                color: $accent;
+            }
+        }
+        &-text {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            color: $text-main;
+        }
+    }
+}
+
+.about__advantages-svg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+.about__advantages-path {
+    fill: none;
+    stroke: #3B82F6;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    filter: drop-shadow(0 0 6px rgba(59,130,246,.8));
+
+    stroke-dasharray: 90 900;
+    animation: snake 4s linear infinite;
+}
+
+@keyframes snake{
+
+    from{
+        stroke-dashoffset:0;
+    }
+
+    to{
+        stroke-dashoffset:-990;
+    }
+
+}

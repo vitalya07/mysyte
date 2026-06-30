@@ -1,0 +1,30 @@
+.hamburger {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 3px solid $accent;
+    display: none;
+    z-index: 30;
+    & > span {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 3px;
+        background-color: $text-main;
+        &:first-child {
+            top: 30%;
+            width: 80%;
+            transition: all .3s ease;
+        }
+        &:nth-child(2) {
+            top: 50%;
+            width: 50%;
+            left: 60%;
+        }
+        &:last-child {
+            top: 70%;
+            width: 80%;
+            transition: all .3s ease;
+        }
+    }
+}

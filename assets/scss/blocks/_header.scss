@@ -1,0 +1,81 @@
+.header {
+    width: 100%;
+    padding: 22px 0;
+    position: fixed;
+    background-color: $bg-secondary;
+    z-index: 100;
+    transition: all .3s ease;
+    &__logo {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        color: $text-secondary;
+        width: 100%;
+        max-width: 150px;
+        & > span {
+            color: $accent-hover;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            & > li {
+                position: relative;
+                & > a {
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 120%;
+                    color: $text-secondary;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: $accent-hover;
+                    }
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    border-radius: 28px;
+                    background-color: $accent-hover;
+                    transition: all .3s ease;
+                }
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &__contacts {
+        &-phone {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 120%;
+            color: $text-secondary;
+            transition: all .3s ease;
+            margin-bottom: 5px;
+            display: block;
+            &:hover {
+                color: $accent-hover;
+            }
+        }
+        &-social {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 30px;
+        }
+    }
+}

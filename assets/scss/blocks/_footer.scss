@@ -1,0 +1,106 @@
+.footer {
+    padding: 120px 0;
+    border: 3px solid $bg-secondary;
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        border-bottom: 2px solid $bg-secondary;
+    }
+    &__column {
+        &-one, &-two, &-three {
+            width: 24%;
+        }
+    }
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+    &__descr {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: $text-main;
+        margin-bottom: 30px;
+    }
+    &__social {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 15px;
+        &-link {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            border: 3px solid $bg-secondary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > img {
+                width: 40px;
+                height: auto;
+            }
+        }
+    }
+    &__navigation, &__services, &__contacts {
+        &-title {
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 120%;
+            color: $accent;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        &-list {
+            & > li {
+                margin-bottom: 12px;
+                & > a {
+                    font-family: "Inter", sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: $text-main;
+                    transition: all .3s ease;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+    &__contacts {
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 15px;
+        }
+        &-img {
+            width: 30px;
+            height: 30px;
+            & > img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__box {
+        padding: 15px 0;
+    }
+    &__policy {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        color: $text-secondary;
+        text-align: center;
+        display: block;
+        transition: all .3s ease;
+        &:hover {
+            color: $accent;;
+        }
+    }
+}
