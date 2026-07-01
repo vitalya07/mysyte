@@ -57,6 +57,8 @@ ul {
 }
 
 .btn {
+  position: relative;
+  overflow: hidden;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 22px;
@@ -71,12 +73,35 @@ ul {
   padding: 15px 30px;
   background-color: #2563EB;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 .btn:hover {
   background-color: #3B82F6;
 }
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -80%;
+  width: 50px;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.45);
+  transform: rotate(25deg);
+  filter: blur(10px);
+  animation: shine 3s ease-in-out infinite;
+}
 
+@keyframes shine {
+  0% {
+    left: -80%;
+  }
+  20% {
+    left: 130%;
+  }
+  100% {
+    left: 130%;
+  }
+}
 .title {
   margin-bottom: 30px;
 }
