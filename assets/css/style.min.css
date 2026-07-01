@@ -87,7 +87,6 @@ ul {
   line-height: 120%;
   color: #F8FAFC;
   width: 100%;
-  margin-bottom: 30px;
 }
 .title-span-2 {
   font-family: "Inter", sans-serif;
@@ -1064,31 +1063,37 @@ ul {
   border-radius: 20px;
   background-color: #0B1220;
 }
-.modal__form {
-  width: 100%;
+.modal__contacts {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
 }
-.modal__label {
-  width: 100%;
-  display: block;
-  margin-bottom: 30px;
+.modal__contacts-link {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
 }
-.modal__label:last-child {
-  margin-bottom: 60px;
-}
-.modal__input {
-  width: 100%;
-  display: block;
-  padding: 15px 30px;
-  border-bottom: 3px solid #2563EB;
-  background-color: rgba(0, 0, 0, 0);
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 120%;
+.modal__contacts-link:hover .modal__contacts-text {
   color: #2563EB;
 }
-.modal__input:last-child {
-  margin-bottom: 60px;
+.modal__contacts-img {
+  width: 45px;
+  height: 45px;
+}
+.modal__contacts-img > img {
+  width: 100%;
+  height: 100%;
+}
+.modal__contacts-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  color: #0B1220;
+  transition: all 0.3s ease;
 }
 
 .modal-open {
@@ -1105,70 +1110,6 @@ ul {
 }
 .modal-hidden .modal__content {
   transform: scale(0);
-}
-
-.succes, .error {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: none;
-}
-.succes__box, .error__box {
-  margin: 200px auto;
-  width: 100%;
-  max-width: 600px;
-  height: 100px;
-  background-color: #F8FAFC;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.succes__title, .error__title {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 120%;
-  color: green;
-}
-.succes__content, .error__content {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  position: relative;
-}
-.succes__close, .error__close {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: -60px;
-  right: -60px;
-  cursor: pointer;
-}
-.succes__close::after, .error__close::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 80%;
-  height: 6px;
-  background-color: #2563EB;
-  transform: rotate(45deg);
-}
-.succes__close::before, .error__close::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 80%;
-  height: 6px;
-  background-color: #2563EB;
-  transform: rotate(-45deg);
-}
-
-.error__title {
-  color: #ff0000;
 }
 
 .hamburger {
