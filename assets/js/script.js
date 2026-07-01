@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 header.style.cssText = 'position: fixed; top: 0;';
                 arrowTop.style.cssText = `display: flex;`
             } 
+            
         });
         // Открытие и закрытие меню начало
         const hamburger = document.querySelector('.hamburger');
@@ -80,6 +81,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
         hamburger.addEventListener('click', showAndCloseMenu);
         // Открытие и закрытие меню конец
     }
-    // Скользящая шапка конец
-    
+        // Скользящая шапка конец
+        
+    let modalShown = false;
+
+    window.addEventListener('scroll', () => {
+
+        if (modalShown) return;
+
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const pageHeight = document.documentElement.scrollHeight;
+        if (scrollPosition >= pageHeight - 100) {
+            showModal();
+            modalShown = true;
+        }
+
+    });
 })
