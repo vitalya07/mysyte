@@ -30,6 +30,7 @@
     }
     &__btn {
         &-text {
+            display: block;
             font-family: "Inter", sans-serif;
             font-weight: 400;
             font-size: 22px;
@@ -37,6 +38,7 @@
             color: $text-main;
         }
         &-img {
+            display: block;
             width: 30px;
             height: 20px;
             margin: 0;
